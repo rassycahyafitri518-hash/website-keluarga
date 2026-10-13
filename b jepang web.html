@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>わたしのかぞく</title>
+    <style>
+        * {margin:0; padding:0; box-sizing:border-box; font-family:"Meiryo",sans-serif;}
+        body {background:#fff; padding:30px 20px; line-height:2.2;}
+        .page {max-width:600px; margin:0 auto;}
+        h1 {text-align:center; margin-bottom:40px; font-size:26px; color:#2c3e50;}
+
+        .tree {display:flex; flex-direction:column; align-items:center; margin-bottom:50px;}
+        .row-top, .row-bottom {display:flex; justify-content:space-between; width:300px;}
+        .row-top {gap:30px; justify-content:center;}
+        .box {border:2px solid #333; padding:12px 15px; text-align:center; font-size:22px; font-weight:bold; background:#fefefe; min-width:110px;}
+        .box img {width:80px; height:80px; object-fit:cover; border-radius:50%; margin-bottom:8px; display:block; margin:0 auto 8px; border:2px solid #ddd;}
+        .line-h {width:30px; height:2px; background:#333;}
+        .line-v {width:2px; height:25px; background:#333; margin:0 auto;}
+        .branch {display:flex; justify-content:space-between; width:450px; position:relative; height:15px; border-top:2px solid #333;}
+        .branch::before {display:none;}
+        .branch-l, .branch-r {display:none;}
+        .line-down {display:flex; justify-content:space-between; width:450px;}
+        .line-down div {width:2px; height:15px; background:#333;}
+        .row-bottom {margin-top:5px; width:450px;}
+
+        .story {border-top:2px dashed #aaa; padding-top:30px;}
+        .sentence {margin:18px 0; padding:8px 12px; background:#f8f9fa; border-radius:8px;}
+        .jp {font-size:20px; color:#2c3e50; font-weight:bold;}
+        .romaji {font-size:15px; color:#7f8c8d; margin-left:10px;}
+        .id {font-size:14px; color:#27ae60; margin-left:10px;}
+
+        @media (max-width:500px) {
+            .row-bottom, .line-down, .branch {width:100%;}
+            .box {min-width:0; padding:8px 5px; font-size:18px;}
+            .box img {width:60px; height:60px;}
+            .row-top {gap:10px;}
+            .jp {font-size:17px;}
+            .romaji {font-size:13px; margin-left:0;}
+            .id {font-size:13px; margin-left:0;}
+            body {padding:20px 10px;}
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <h1>わたしのかぞく</h1>
+
+    <div class="tree">
+        <div class="row-top">
+            <div class="box">
+                <img src="c:\Users\LENOVO\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\LocalState\sessions\71E0D4A5EB5582AFB615216F72D3C7842C34B653\transfers\2026-41\WhatsApp Image 2026-10-07 at 13.01.45.jpeg" alt="Ayah">
+                ちち
+            </div>
+            <div class="line-h"></div>
+            <div class="box">
+                <img src="c:\Users\LENOVO\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\LocalState\sessions\71E0D4A5EB5582AFB615216F72D3C7842C34B653\transfers\2026-41\WhatsApp Image 2026-10-09 at 20.12.38.jpeg" alt="Ibu">
+                はは
+            </div>
+        </div>
+        <div class="line-v"></div>
+        <div class="branch">
+            <div class="branch-l"></div>
+            <div class="branch-r"></div>
+        </div>
+        <div class="line-down">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="row-bottom">
+            <div class="box">
+                <img src="c:\Users\LENOVO\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\LocalState\sessions\71E0D4A5EB5582AFB615216F72D3C7842C34B653\transfers\2026-41\WhatsApp Image 2026-10-07 at 14.40.47.jpeg" alt="Saya">
+                わたし
+            </div>
+            <div class="box">
+                <img src="c:\Users\LENOVO\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\LocalState\sessions\71E0D4A5EB5582AFB615216F72D3C7842C34B653\transfers\2026-41\WhatsApp Image 2026-10-09 at 20.16.45.jpeg" alt="Adik perempuan">
+                いもうと
+            </div>
+            <div class="box">
+                <img src="c:\Users\LENOVO\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\LocalState\sessions\71E0D4A5EB5582AFB615216F72D3C7842C34B653\transfers\2026-41\WhatsApp Image 2026-10-09 at 20.11.49.jpeg" alt="Adik laki-laki">
+                おとうと
+            </div>
+        </div>
+    </div>
+
+    <div class="story">
+        <div class="sentence">
+            <div class="jp">これはわたしのかぞくです。</div>
+            <div class="romaji">Kore wa watashi no kazoku desu.</div>
+            <div class="id">→ Ini keluarga saya.</div>
+        </div>
+        <div class="sentence">
+            <div class="jp">わたしのかぞくはごにんです。</div>
+            <div class="romaji">Watashi no kazoku wa gonin desu.</div>
+            <div class="id">→ Keluarga saya beranggotakan 5 orang.</div>
+        </div>
+        <div class="sentence">
+            <div class="jp">ちちとははとわたしといもうととおとうとです。</div>
+            <div class="romaji">Chichi to haha to watashi to imouto to otouto desu.</div>
+            <div class="id">→ Anggotanya: ayah, ibu, saya, adik perempuan, dan adik laki-laki.</div>
+        </div>
+        <div class="sentence">
+            <div class="jp">きょうだいはさんにんです。</div>
+            <div class="romaji">Kyoudai wa sannin desu.</div>
+            <div class="id">→ Kami bersaudara 3 orang.</div>
+        </div>
+        <div class="sentence">
+            <div class="jp">わたしにはいもうととおとうとがいます。</div>
+            <div class="romaji">Watashi ni wa imouto to otouto ga imasu.</div>
+            <div class="id">→ Saya mempunyai adik perempuan dan adik laki-laki.</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
